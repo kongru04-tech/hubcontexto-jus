@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "registry_version": "1.1.1",
-  "updatedAt": "2026-11-19T14:40:00.000Z",
+  "registry_version": "1.2.0",
+  "updatedAt": "2026-11-19T15:20:00.000Z",
   "supported_embedding_models": ["intfloat/multilingual-e5-small"],
   "packs": [
     {
@@ -22,19 +22,10 @@
       "featured": true,
       "packBuiltAt": "2026-11-19T14:10:52Z",
       "contentSnapshotAt": "2025-03-12T00:00:00Z",
-      "embedding": {
-        "model": "intfloat/multilingual-e5-small",
-        "dimensions": 384,
-        "normalized": true
-      },
-      "curator": {
-        "id": "kongru-oficial",
-        "name": "Curadoria Oficial Kongru",
-        "verified": true,
-        "badge": "Oficial"
-      },
+      "embedding": { "model": "intfloat/multilingual-e5-small", "dimensions": 384, "normalized": true },
+      "curator": { "id": "kongru-oficial", "name": "Curadoria Oficial Kongru", "verified": true, "badge": "Oficial" },
       "stats": { "chunks_count": 62, "size_bytes": 145273 },
-      "provenance": "Texto derivado do dataset Hugging Face celsowm/sumulas_vinculantes_stf. Embeddings E5-small gerados no pipeline Kongru."
+      "provenance": "Texto derivado do dataset Hugging Face celsowm/sumulas_vinculantes_stf."
     },
     {
       "id": "br.jus.stj.sumulas",
@@ -54,26 +45,63 @@
       "featured": true,
       "packBuiltAt": "2026-11-19T14:12:58Z",
       "contentSnapshotAt": "2025-03-07T00:00:00Z",
-      "embedding": {
-        "model": "intfloat/multilingual-e5-small",
-        "dimensions": 384,
-        "normalized": true
-      },
-      "curator": {
-        "id": "kongru-oficial",
-        "name": "Curadoria Oficial Kongru",
-        "verified": true,
-        "badge": "Oficial"
-      },
+      "embedding": { "model": "intfloat/multilingual-e5-small", "dimensions": 384, "normalized": true },
+      "curator": { "id": "kongru-oficial", "name": "Curadoria Oficial Kongru", "verified": true, "badge": "Oficial" },
       "stats": { "chunks_count": 676, "size_bytes": 1607619 },
-      "provenance": "Texto derivado do dataset Hugging Face celsowm/sumulas_stj. Embeddings E5-small gerados no pipeline Kongru."
+      "provenance": "Texto derivado do dataset Hugging Face celsowm/sumulas_stj."
+    },
+    {
+      "id": "br.jus.stf.sumulas",
+      "slug": "sumulas-stf",
+      "name": "Súmulas do STF",
+      "summary": "Súmulas do Supremo Tribunal Federal (enunciados consolidados).",
+      "description": "Pacote curado a partir de celsowm/sumulas_stf. Vetores E5-small reais. Confirme vigência na fonte oficial.",
+      "tags": ["sumulas", "stf", "precedentes"],
+      "version": "0.1.0",
+      "releaseTag": "sumulas-stf-v0.1.0",
+      "assetName": "sumulas-stf-v0.1.0.kongrupack",
+      "sizeBytes": 1680286,
+      "sha256": "7c222073823c70a5a981ab2603ea8a1b6a8baa737b514df68fbb08068d2e2229",
+      "downloadUrl": "https://github.com/kongru04-tech/hubcontexto-jus/releases/download/sumulas-stf-v0.1.0/sumulas-stf-v0.1.0.kongrupack",
+      "publisher": "Kongru",
+      "license": "Conteúdo de fonte oficial pública; empacotamento MIT Kongru",
+      "featured": true,
+      "packBuiltAt": "2026-11-19T15:17:38Z",
+      "contentSnapshotAt": "2025-03-05T00:00:00Z",
+      "embedding": { "model": "intfloat/multilingual-e5-small", "dimensions": 384, "normalized": true },
+      "curator": { "id": "kongru-oficial", "name": "Curadoria Oficial Kongru", "verified": true, "badge": "Oficial" },
+      "stats": { "chunks_count": 724, "size_bytes": 1680286 },
+      "provenance": "Texto derivado do dataset Hugging Face celsowm/sumulas_stf. F2.6 expansão."
+    },
+    {
+      "id": "br.jus.lei.cdc",
+      "slug": "cdc-lei-8078",
+      "name": "CDC — Código de Defesa do Consumidor",
+      "summary": "Lei 8.078/1990 (CDC) em artigos, com embeddings E5 para o Acervo Kongru.",
+      "description": "Pacote de legislação a partir de celsowm/cdc_lei_8078_1990. Cada artigo é um chunk E5-small. Confirme texto vigente no Planalto.",
+      "tags": ["cdc", "consumidor", "legislacao"],
+      "version": "0.1.0",
+      "releaseTag": "cdc-lei-8078-v0.1.0",
+      "assetName": "cdc-lei-8078-v0.1.0.kongrupack",
+      "sizeBytes": 312236,
+      "sha256": "1cd858b27518946b5e8f246c8aeff54337ecfd1c9710a98477d995382fc3e01e",
+      "downloadUrl": "https://github.com/kongru04-tech/hubcontexto-jus/releases/download/cdc-lei-8078-v0.1.0/cdc-lei-8078-v0.1.0.kongrupack",
+      "publisher": "Kongru",
+      "license": "Conteúdo de fonte oficial pública; empacotamento MIT Kongru",
+      "featured": true,
+      "packBuiltAt": "2026-11-19T15:18:09Z",
+      "contentSnapshotAt": "2025-09-30T00:00:00Z",
+      "embedding": { "model": "intfloat/multilingual-e5-small", "dimensions": 384, "normalized": true },
+      "curator": { "id": "kongru-oficial", "name": "Curadoria Oficial Kongru", "verified": true, "badge": "Oficial" },
+      "stats": { "chunks_count": 129, "size_bytes": 312236 },
+      "provenance": "Texto derivado do dataset Hugging Face celsowm/cdc_lei_8078_1990. F2.6 expansão."
     },
     {
       "id": "kongru.demo.hub-f2",
       "slug": "demo-hub-f2",
       "name": "Demo Hub F2 — Registry CDN",
       "summary": "Pacote técnico de teste da Fase 2 (vetores placeholder). Mantido para regressão da CDN.",
-      "description": "Artefacto mínimo com vetores placeholder. Preferir os packs oficiais de súmulas para uso real.",
+      "description": "Artefacto mínimo com vetores placeholder. Preferir os packs oficiais para uso real.",
       "tags": ["demo", "f2", "registry"],
       "version": "0.1.0",
       "releaseTag": "kongru.demo.hub-f2-v0.1.0",
@@ -86,18 +114,8 @@
       "featured": false,
       "packBuiltAt": "2026-03-19T13:00:00Z",
       "contentSnapshotAt": "2026-03-19T13:00:00Z",
-      "embedding": {
-        "model": "intfloat/multilingual-e5-small",
-        "dimensions": 384,
-        "normalized": false,
-        "notes": "Vetores placeholder F2-A"
-      },
-      "curator": {
-        "id": "kongru-oficial",
-        "name": "Curadoria Oficial Kongru",
-        "verified": true,
-        "badge": "Oficial"
-      }
+      "embedding": { "model": "intfloat/multilingual-e5-small", "dimensions": 384, "normalized": false, "notes": "Vetores placeholder F2-A" },
+      "curator": { "id": "kongru-oficial", "name": "Curadoria Oficial Kongru", "verified": true, "badge": "Oficial" }
     }
   ]
 }
