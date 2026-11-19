@@ -11,6 +11,16 @@ Este repositório **não** contém o código do site Vite nem do desktop Kongru.
 | Catálogo | https://raw.githubusercontent.com/kongru04-tech/hubcontexto-jus/main/catalog.json |
 | Releases | https://github.com/kongru04-tech/hubcontexto-jus/releases |
 
+## Pacotes atuais (F2.5)
+
+| Pack | Chunks | Embedding |
+|------|--------|-----------|
+| Súmulas Vinculantes do STF | 62 | E5-small real |
+| Súmulas do STJ | 676 | E5-small real |
+| Demo Hub F2 | 3 | placeholder (regressão CDN) |
+
+Textos derivados de datasets abertos (coleção Hugging Face `celsowm`); embeddings gerados com `intfloat/multilingual-e5-small`. Confirme sempre a vigência nas fontes oficiais.
+
 ## Formato `.kongrupack`
 
 ZIP com:
@@ -18,10 +28,6 @@ ZIP com:
 - `metadata.json` — manifesto (pack_id, versão, modelo E5, contagem de chunks)
 - `chunks.parquet` — texto + metadados + vetores (`intfloat/multilingual-e5-small`, 384d)
 
-## Fase 2 (A)
-
-Inclui um pack **demo técnico** (`kongru.demo.hub-f2`) para validar download via GitHub Releases. Os vetores do demo são placeholders — não usar em produção RAG.
-
 ## Licença
 
-MIT para a estrutura deste registry. Textos jurídicos oficiais (quando publicados em packs reais) preservam o regime das fontes públicas.
+MIT para a estrutura deste registry. Textos jurídicos oficiais preservam o regime das fontes públicas.

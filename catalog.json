@@ -1,15 +1,75 @@
 {
   "schemaVersion": 1,
-  "registry_version": "1.0.0",
-  "updatedAt": "2026-03-19T13:00:00.000Z",
+  "registry_version": "1.1.0",
+  "updatedAt": "2026-11-19T14:15:00.000Z",
   "supported_embedding_models": ["intfloat/multilingual-e5-small"],
   "packs": [
+    {
+      "id": "br.jus.stf.sumulas-vinculantes",
+      "slug": "sumulas-vinculantes-stf",
+      "name": "Súmulas Vinculantes do STF",
+      "summary": "As súmulas vinculantes do Supremo Tribunal Federal, com enunciado, ramo e referência legislativa.",
+      "description": "Pacote curado a partir do dataset aberto celsowm/sumulas_vinculantes_stf (fontes oficiais STF). Cada súmula é um chunk com vetor E5-small normalizado (384d). Sempre confirme vigência na fonte oficial.",
+      "tags": ["sumulas", "stf", "vinculante", "precedentes"],
+      "version": "0.1.0",
+      "releaseTag": "sumulas-vinculantes-stf-v0.1.0",
+      "assetName": "sumulas-vinculantes-stf-v0.1.0.kongrupack",
+      "sizeBytes": 145273,
+      "sha256": "29e3f9abdf7e6c8d45e434a508bdb0d2b9c3902dcaa7aa915f2d6175da669f13",
+      "downloadUrl": "https://github.com/kongru04-tech/hubcontexto-jus/releases/download/sumulas-vinculantes-stf-v0.1.0/sumulas-vinculantes-stf-v0.1.0.kongrupack",
+      "publisher": "Kongru",
+      "license": "Conteúdo de fonte oficial pública; empacotamento MIT Kongru",
+      "featured": true,
+      "embedding": {
+        "model": "intfloat/multilingual-e5-small",
+        "dimensions": 384,
+        "normalized": true
+      },
+      "curator": {
+        "id": "kongru-oficial",
+        "name": "Curadoria Oficial Kongru",
+        "verified": true,
+        "badge": "Oficial"
+      },
+      "stats": { "chunks_count": 62, "size_bytes": 145273 },
+      "provenance": "Texto derivado do dataset Hugging Face celsowm/sumulas_vinculantes_stf. Embeddings E5-small gerados no pipeline Kongru."
+    },
+    {
+      "id": "br.jus.stj.sumulas",
+      "slug": "sumulas-stj",
+      "name": "Súmulas do STJ",
+      "summary": "Súmulas do Superior Tribunal de Justiça com enunciado e referências legislativas.",
+      "description": "Pacote curado a partir do dataset aberto celsowm/sumulas_stj. Cada súmula é um chunk com vetor E5-small normalizado (384d). Confirme sempre a vigência na fonte oficial do STJ.",
+      "tags": ["sumulas", "stj", "precedentes"],
+      "version": "0.1.0",
+      "releaseTag": "sumulas-stj-v0.1.0",
+      "assetName": "sumulas-stj-v0.1.0.kongrupack",
+      "sizeBytes": 1607619,
+      "sha256": "2b051e13232ef048afcd3456ae500080f3d6920e00b8d4838fccc2fabb8a8a65",
+      "downloadUrl": "https://github.com/kongru04-tech/hubcontexto-jus/releases/download/sumulas-stj-v0.1.0/sumulas-stj-v0.1.0.kongrupack",
+      "publisher": "Kongru",
+      "license": "Conteúdo de fonte oficial pública; empacotamento MIT Kongru",
+      "featured": true,
+      "embedding": {
+        "model": "intfloat/multilingual-e5-small",
+        "dimensions": 384,
+        "normalized": true
+      },
+      "curator": {
+        "id": "kongru-oficial",
+        "name": "Curadoria Oficial Kongru",
+        "verified": true,
+        "badge": "Oficial"
+      },
+      "stats": { "chunks_count": 676, "size_bytes": 1607619 },
+      "provenance": "Texto derivado do dataset Hugging Face celsowm/sumulas_stj. Embeddings E5-small gerados no pipeline Kongru."
+    },
     {
       "id": "kongru.demo.hub-f2",
       "slug": "demo-hub-f2",
       "name": "Demo Hub F2 — Registry CDN",
-      "summary": "Pacote técnico de teste da Fase 2: valida catalog.json remoto, GitHub Releases e download do .kongrupack.",
-      "description": "Artefacto mínimo (metadata.json + chunks.parquet) com 3 chunks e vetores E5-small placeholder (não semânticos). Serve apenas para exercitar a CDN do registry. A ingestão real no LanceDB / protocol handler desktop fica fora desta fase.",
+      "summary": "Pacote técnico de teste da Fase 2 (vetores placeholder). Mantido para regressão da CDN.",
+      "description": "Artefacto mínimo com vetores placeholder. Preferir os packs oficiais de súmulas para uso real.",
       "tags": ["demo", "f2", "registry"],
       "version": "0.1.0",
       "releaseTag": "kongru.demo.hub-f2-v0.1.0",
@@ -19,7 +79,7 @@
       "downloadUrl": "https://github.com/kongru04-tech/hubcontexto-jus/releases/download/kongru.demo.hub-f2-v0.1.0/kongru.demo.hub-f2-v0.1.0.kongrupack",
       "publisher": "Kongru",
       "license": "MIT — demo técnico do registry",
-      "featured": true,
+      "featured": false,
       "embedding": {
         "model": "intfloat/multilingual-e5-small",
         "dimensions": 384,
