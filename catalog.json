@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "registry_version": "1.0.0",
+  "updatedAt": "2026-03-19T13:00:00.000Z",
+  "supported_embedding_models": ["intfloat/multilingual-e5-small"],
+  "packs": [
+    {
+      "id": "kongru.demo.hub-f2",
+      "slug": "demo-hub-f2",
+      "name": "Demo Hub F2 — Registry CDN",
+      "summary": "Pacote técnico de teste da Fase 2: valida catalog.json remoto, GitHub Releases e download do .kongrupack.",
+      "description": "Artefacto mínimo (metadata.json + chunks.parquet) com 3 chunks e vetores E5-small placeholder (não semânticos). Serve apenas para exercitar a CDN do registry. A ingestão real no LanceDB / protocol handler desktop fica fora desta fase.",
+      "tags": ["demo", "f2", "registry"],
+      "version": "0.1.0",
+      "releaseTag": "kongru.demo.hub-f2-v0.1.0",
+      "assetName": "kongru.demo.hub-f2-v0.1.0.kongrupack",
+      "sizeBytes": 1922,
+      "sha256": "ff12984851ce2e8ca64edb4dda38ab39221ce69901e8e9666ad2dfd3e1980740",
+      "downloadUrl": "https://github.com/kongru04-tech/hubcontexto-jus/releases/download/kongru.demo.hub-f2-v0.1.0/kongru.demo.hub-f2-v0.1.0.kongrupack",
+      "publisher": "Kongru",
+      "license": "MIT — demo técnico do registry",
+      "featured": true,
+      "embedding": {
+        "model": "intfloat/multilingual-e5-small",
+        "dimensions": 384,
+        "normalized": false,
+        "notes": "Vetores placeholder F2-A"
+      },
+      "curator": {
+        "id": "kongru-oficial",
+        "name": "Curadoria Oficial Kongru",
+        "verified": true,
+        "badge": "Oficial"
+      }
+    }
+  ]
+}
