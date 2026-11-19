@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "registry_version": "1.1.0",
-  "updatedAt": "2026-11-19T14:15:00.000Z",
+  "registry_version": "1.1.1",
+  "updatedAt": "2026-11-19T14:40:00.000Z",
   "supported_embedding_models": ["intfloat/multilingual-e5-small"],
   "packs": [
     {
@@ -20,6 +20,8 @@
       "publisher": "Kongru",
       "license": "Conteúdo de fonte oficial pública; empacotamento MIT Kongru",
       "featured": true,
+      "packBuiltAt": "2026-11-19T14:10:52Z",
+      "contentSnapshotAt": "2025-03-12T00:00:00Z",
       "embedding": {
         "model": "intfloat/multilingual-e5-small",
         "dimensions": 384,
@@ -50,6 +52,8 @@
       "publisher": "Kongru",
       "license": "Conteúdo de fonte oficial pública; empacotamento MIT Kongru",
       "featured": true,
+      "packBuiltAt": "2026-11-19T14:12:58Z",
+      "contentSnapshotAt": "2025-03-07T00:00:00Z",
       "embedding": {
         "model": "intfloat/multilingual-e5-small",
         "dimensions": 384,
@@ -80,6 +84,8 @@
       "publisher": "Kongru",
       "license": "MIT — demo técnico do registry",
       "featured": false,
+      "packBuiltAt": "2026-03-19T13:00:00Z",
+      "contentSnapshotAt": "2026-03-19T13:00:00Z",
       "embedding": {
         "model": "intfloat/multilingual-e5-small",
         "dimensions": 384,
